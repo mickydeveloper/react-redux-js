@@ -1,21 +1,4 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import TitleContainer from './container/title.jsx';
 
-export default class AppComponent extends Component {
-    constructor() {
-        super();
-
-        this.state = {
-            title: 'Wo',
-        };
-    }
-
-    render() {
-        return (
-            <div>{this.state.title}</div>
-        );
-    }
-}
-
-const app = document.getElementById("app");
-app ? ReactDOM.render(<AppComponent/>, app) : false;
+export const AppComponent = () => (<TitleContainer/>);
